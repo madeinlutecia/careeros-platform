@@ -69,8 +69,8 @@ public class DiaryService {
                 entry.getEntryDate(),
                 entry.getWhatIDid(),
                 entry.getProblemsSolved(),
-                entry.getTechnologies(),
-                entry.getPeopleInvolved(),
+                new java.util.ArrayList<>(entry.getTechnologies()),
+                new java.util.ArrayList<>(entry.getPeopleInvolved()),
                 entry.getTimeSpentMinutes(),
                 entry.getLessonsLearned(),
                 entry.getStatus().name()

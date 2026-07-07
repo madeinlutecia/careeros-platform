@@ -20,7 +20,7 @@ public class DiaryEntry extends TenantEntity {
     @Column(nullable = false)
     private LocalDate entryDate;
 
-    @Column(columnDefinition = "TEXT", nullable = false)
+    @Column(name = "what_i_did", columnDefinition = "TEXT", nullable = false)
     private String whatIDid;
 
     @Column(columnDefinition = "TEXT")

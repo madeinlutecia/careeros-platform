@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS master_profiles (
     user_id UUID NOT NULL UNIQUE,
     full_name VARCHAR(255) NOT NULL,
     headline VARCHAR(500),
-    current_role VARCHAR(255),
+    current_position VARCHAR(255),
     about TEXT,
     github_url VARCHAR(500),
     linkedin_url VARCHAR(500),

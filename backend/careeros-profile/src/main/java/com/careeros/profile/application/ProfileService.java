@@ -50,12 +50,13 @@ public class ProfileService {
                 profile.getGithubUrl(),
                 profile.getLinkedinUrl(),
                 profile.getPortfolioUrl(),
-                profile.getSkills(),
-                profile.getLanguages(),
+                new java.util.ArrayList<>(profile.getSkills()),
+                new java.util.ArrayList<>(profile.getLanguages()),
                 profile.getExperiences().stream()
                         .map(e -> new ProfileResponse.ExperienceDto(
                                 e.getId(), e.getCompany(), e.getRole(), e.getStartDate(),
-                                e.getEndDate(), e.isCurrent(), e.getDescription(), e.getTechnologies()))
+                                e.getEndDate(), e.isCurrent(), e.getDescription(),
+                                new java.util.ArrayList<>(e.getTechnologies())))
                         .toList(),
                 profile.getEducations().stream()
                         .map(e -> new ProfileResponse.EducationDto(

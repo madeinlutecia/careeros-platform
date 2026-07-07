@@ -18,6 +18,8 @@ public class MasterProfile extends TenantEntity {
     private String fullName;
 
     private String headline;
+
+    @Column(name = "current_position")
     private String currentRole;
 
     @Column(columnDefinition = "TEXT")
