@@ -4,6 +4,15 @@
 
 > Produto: **CareerOS** | Repositório: **CareerOS Platform** | Arquitetura: **Monólito Modular (MVP)**
 
+## Deploy em produção
+
+| Serviço | URL | Host |
+|---------|-----|------|
+| Frontend (Angular) | https://careeros-web-mu.vercel.app | Vercel |
+| Backend (Spring Boot API) | https://backend-production-29505.up.railway.app | Railway |
+| Python AI Service | https://python-service-production-c7af.up.railway.app | Railway |
+| Banco de dados | PostgreSQL gerenciado | Supabase (sa-east-1) |
+
 ## Visão
 
 Centralizar todas as informações profissionais, utilizar IA para gerar documentos personalizados, acompanhar vagas e organizar todo o processo de recolocação — **sem violar Termos de Uso** de plataformas como LinkedIn.
