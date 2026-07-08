@@ -20,7 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatButtonModule,
   ],
   template: `
-    <mat-toolbar color="primary">
+    <mat-toolbar class="app-toolbar">
       <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
@@ -48,10 +48,14 @@ import { MatButtonModule } from '@angular/material/button';
     </mat-sidenav-container>
   `,
   styles: [`
+    .app-toolbar {
+      background: var(--mat-sys-primary);
+      color: var(--mat-sys-on-primary);
+    }
     .spacer { flex: 1; }
     .container { height: calc(100vh - 64px); }
     .content { padding: 24px; }
-    .active { background: rgba(63, 81, 181, 0.08); }
+    .active { background: var(--mat-sys-secondary-container); }
   `],
 })
 export class AppComponent {
